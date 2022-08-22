@@ -1,0 +1,710 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+    .header-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: blue;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .nav-left {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        background: transparent;
+    }
+    
+    .nav-left a {
+        display: flex;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .logo {
+        width: 120px;
+        height: 50px;
+        margin-left: 55px;
+    }
+    
+    .menu-icon {
+        height: 40px;
+        background: transparent;
+        border: 5px solid;
+        border-color: blue;
+    }
+    
+    .nav-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    
+    .nav-center img {
+        width: auto;
+    }
+    
+    .nav-center input {
+        display: flex;
+        align-items: center;
+        background-color: #efefef;
+        width: 170px;
+        height: 30px;
+        border: 5px solid;
+        border-color: blue;
+    }
+    
+    .nav-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .nav-right a {
+        display: flex;
+        text-decoration: none;
+    }
+    
+    .message-icon {
+        width: 50px;
+        margin-right: 20px;
+    }
+    
+    .notification-icon {
+        width: 50px;
+        margin-right: 20px;
+    }
+    
+    .profile-icon {
+        width: 50px;
+        border: 5px solid blue;
+        border-radius: 50%;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 1.5%;
+        background-color: black;
+    }
+    
+    .left-side-bar {
+        flex-basis: 25%;
+        align-items: center;
+        background: blue;
+        position: sticky;
+        height: 640px;
+        bottom: 0;
+        top: 50;
+        display: block;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+    
+    .umhm {
+        font-weight: 600;
+        margin-left: 30px;
+        font-size: medium;
+        margin-top: 10px;
+    }
+    
+    .friends-short {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    
+    .friends-short-table {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .friends-short a {
+        text-decoration: none;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50%;
+    }
+    
+    .user-1 {
+        width: 40px;
+        border-radius: 50%;
+    }
+    
+    .user-2 {
+        width: 40px;
+        border-radius: 50%;
+    }
+    
+    .user-3 {
+        width: 40px;
+        border-radius: 50%;
+    }
+    
+    .user-4 {
+        width: 40px;
+        border-radius: 50%;
+    }
+    
+    .user-5 {
+        width: 40px;
+        border-radius: 50%;
+    }
+    
+    .ads-widget {
+        display: inline-block;
+        overflow-x: auto;
+        height: 415px;
+    }
+    
+    .advertisment {
+        margin-top: 20px;
+        background: border-box;
+        background-color: whitesmoke;
+        color: black;
+        width: 100%;
+    }
+    
+    .ads-profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 210px;
+    }
+    
+    .ads-profile a img {
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    
+    .ads-profile-name {
+        margin-left: 5px;
+    }
+    
+    .ads-profile-name p {
+        font-weight: 600;
+    }
+    
+    .ads-profile-name small {
+        font-size: small;
+    }
+    
+    .ads-description {
+        display: block;
+        margin-top: 10px;
+    }
+    
+    .ads-description p a {
+        text-decoration: none;
+    }
+    
+    .ads-description p {
+        font-size: small;
+        margin-left: 10px;
+    }
+    
+    .ads-description small {
+        font-size: small;
+        color: blue;
+        text-decoration: none;
+    }
+    
+    .ads-banner {
+        width: 279.2px;
+        margin-top: 15px;
+        height: 280px;
+    }
+    
+    .ads-engagement {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-style: outset;
+        border-color: darkgray;
+        width: 260px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+    
+    .ads-engagement a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        color: black;
+        font-size: x-small;
+    }
+    
+    .ads-like {
+        width: 20px;
+        margin-left: 2px;
+    }
+    
+    .ads-comment {
+        width: 20px;
+    }
+    
+    .ads-share {
+        width: 25px;
+    }
+    
+    .ads-engagement-profile {
+        width: 30px;
+        border-radius: 50%;
+    }
+    
+    .ads-offer {
+        width: 30px;
+        border-radius: 50%;
+    }
+    
+    .main-containt {
+        flex-basis: 48%;
+    }
+    
+    .tab-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 580px;
+        border-color: darkgrey;
+        border-style: outset;
+        background: white;
+        position: sticky;
+        top: 60;
+        z-index: 100;
+        margin-left: px;
+    }
+    
+    .home-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        margin-left: 10px;
+    }
+    
+    .home-icon a {
+        display: flex;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .home-icon a img {
+        width: 30px;
+        border-radius: 10px;
+    }
+    
+    .watch-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        margin-right: 15px;
+    }
+    
+    .watch-icon a {
+        display: flex;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .watch-icon a img {
+        width: 30px;
+        border-radius: 10px;
+    }
+    
+    .pages-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+    }
+    
+    .pages-icon a {
+        display: flex;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .pages-icon a img {
+        width: 30px;
+        border-radius: 10px;
+    }
+    
+    .marketplace-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+    }
+    
+    .marketplace-icon a {
+        display: flex;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .marketplace-icon a img {
+        width: 30px;
+        border-radius: 10px;
+    }
+    
+    .groups-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+    }
+    
+    .groups-icon a {
+        display: flex;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .groups-icon a img {
+        width: 30px;
+        border-radius: 10px;
+    }
+    
+    .feed-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        margin-right: 20x;
+    }
+    
+    .feed-icon a {
+        display: flex;
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .feed-icon a img {
+        width: 30px;
+        border-radius: 10px;
+    }
+    
+    .stories {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .stories-table {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .create-story {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/profile.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 2opx;
+        border-radius: 10px;
+        border-bottom: #efefef;
+    }
+    
+    .create-story-w {
+        background: whitesmoke;
+        background-size: cover;
+        margin-top: 170px;
+        border-bottom: #efefef;
+    }
+    
+    .create-story img {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        margin-left: 25px;
+        margin-top: 120px;
+        bottom: 10px;
+    }
+    
+    .create-story p {
+        display: flex;
+        align-items: center;
+        margin-top: px;
+        margin-left: 25px;
+        font-size: small;
+        color: black;
+    }
+    
+    .story-1 {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/member-1.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    .story-1 img {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    
+    .story-1 p {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+    
+    .story-2 {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/member-2.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    .story-2 img {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    
+    .story-2 p {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+    
+    .story-3 {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/member-3.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    .story-3 img {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    
+    .story-3 p {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+    
+    .story-4 {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/member-5.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    .story-4 img {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    
+    .story-4 p {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+    
+    .story-5 {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/member-6.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    .story-5 img {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    
+    .story-5 p {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+    
+    .story-6 {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/member-7.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    .story-6 img {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    
+    .story-6 p {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+    
+    .story-7 {
+        flex-basis: 15%;
+        align-items: center;
+        background-image: url(images/member-8.png);
+        background-position: center;
+        background-size: cover;
+        height: 230px;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    .story-7 img {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+    
+    .story-7 p {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+    
+    .desktop-create-post-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        border-style: outset;
+        background-color: whitesmoke;
+    }
+    
+    .d-user-create-post-profile {
+        flex-basis: 10%;
+    }
+    
+    .d-user-create-post-profile img {
+        width: 40px;
+        border-radius: 50%;
+        border: 5px solid blue;
+        margin-left: 10px;
+    }
+    
+    .whats-on-your-mind {
+        flex-basis: 40%;
+        background-color: #efefef;
+        border: 5px solid #efefef;
+        border-style: outset;
+        border-width: 10px;
+    }
+    
+    .whats-on-your-mind a {
+        text-decoration: none;
+    }
+    
+    .whats-on-your-mind a p {
+        font-size: small;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: black;
+    }
+    
+    .d-create-post-photo-icon {
+        flex-basis: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .d-live-video-icon {
+        width: 35px;
+    }
+    
+    .d-photo-or-video-icon {
+        width: 30px;
+        margin-left: 5px;
+    }
+    
+    .d-reels-icon {
+        width: 40;
+        margin-right: 5px;
+    }
+    
+    .right-side-bar {
+        flex-basis: 25%;
+        align-items: center;
+        background: blue;
+        position: sticky;
+        height: 640px;
+        bottom: 0;
+        top: 50;
+        display: block;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
